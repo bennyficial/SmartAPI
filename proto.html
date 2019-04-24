@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Demo</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <a class="navbar-brand text-white" href="#">MCL SmartAPI</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto" style="right: 0px; position: fixed;">
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#">How To</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#">XML Post</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="#">XML Upload</a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12"><h1>How To</h1></div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At veritatis commodi tempora molestias tempore, nostrum dolore dolorum voluptatem, aspernatur inventore deserunt cupiditate incidunt mollitia laudantium tenetur voluptate minus. Reprehenderit, placeat.</div>
+		</div>
+
+		<br>
+		<div class="row">
+			<div class="col-md-12"><h1>XML Posting Tool</h1></div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">Both methods below will require filling out the Authorization, Interface Identifier, and Endpoint URL prior to submission. Authorization should be Basic [Base64credentials] and the interface identifier and endpoint URL can be referenced from the specs.
+			</div>
+		</div>
+		<br>
+		
+		<div class="row">
+			<div class="col-md-4">Authorization<input type="text" name="auth" id="auth" placeholder="Basic Y3VzdG9tZXwcHkxMjM" style="display: block;
+	width: 100%;"></div>
+			<div class="col-md-4">Interface Identifier<input type="text" name="interface" id="interface" placeholder="SmartAPITestingIdentifier" style="display: block;
+	width: 100%;"></div>
+			<div class="col-md-4">Endpoint URL<input type="text" name="interface" id="interface" placeholder="https://demo.mortgagecreditlink.com/inetapi/request_products.aspx" style="display: block;
+	width: 100%;"></div>
+		</div>
+	
+		<br>
+		<div class="row">
+			<div class="col-md-12">Request XML<textarea name="xml" placeholder="Paste contents of request XML here"style="display: block;
+	width: 100%;"></textarea></div>
+
+		</div>
+		<br>
+		<button type="button" class="btn btn-primary">Submit</button>
+		<br>
+		<br>
+
+
+		<div class="row">
+			<div class="col-md-12"><h1>XML Upload Tool</h1></div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">Upload request XML below</div>
+		</div>
+
+		  <div class="input-group mb-3">
+  <div class="custom-file">
+    <input type="file" class="custom-file-input" id="inputGroupFile02">
+    <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose file</label>
+  </div>
+  <div class="input-group-append">
+    <span class="input-group-text" id="inputGroupFileAddon02">Upload</span>
+  </div>
+</div>
+
+<button type="button" class="btn btn-primary">Submit</button>
+
+</div>
+
+
+
+</body>
+</html>
